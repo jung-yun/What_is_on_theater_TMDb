@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="168" id="KGk-i7-Jjw" customClass="MovieTableViewCell" customModule="What_is_on_theater_TMBb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="168"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="168"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.artframe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="sBO-rS-x3c">
+                        <rect key="frame" x="0.0" y="1" width="191" height="165.5"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="59M-tp-vMH">
+                        <rect key="frame" x="191" y="0.0" width="191" height="168"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QS3-fT-dZD">
+                                <rect key="frame" x="0.0" y="0.0" width="191" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TxX-gd-NC7">
+                                <rect key="frame" x="0.0" y="84" width="191" height="84"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwW-Cl-RSE">
+                                        <rect key="frame" x="0.0" y="0.0" width="191" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTF-hf-lzC">
+                                        <rect key="frame" x="0.0" y="42" width="191" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="59M-tp-vMH" secondAttribute="trailing" id="2ay-TI-rS5"/>
+                    <constraint firstItem="TxX-gd-NC7" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.5" id="3gP-RY-3pc"/>
+                    <constraint firstItem="59M-tp-vMH" firstAttribute="leading" secondItem="sBO-rS-x3c" secondAttribute="trailing" id="5bV-wm-jHd"/>
+                    <constraint firstAttribute="bottom" secondItem="59M-tp-vMH" secondAttribute="bottom" id="8fg-OE-DR6"/>
+                    <constraint firstAttribute="bottom" secondItem="sBO-rS-x3c" secondAttribute="bottom" id="FvV-mg-JRT"/>
+                    <constraint firstItem="sBO-rS-x3c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="LhZ-VH-wtb"/>
+                    <constraint firstItem="sBO-rS-x3c" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.5" id="QAz-T6-UZ3"/>
+                    <constraint firstItem="59M-tp-vMH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="toi-lM-NGM"/>
+                    <constraint firstItem="sBO-rS-x3c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wTc-iM-E2X"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="posterImageView" destination="sBO-rS-x3c" id="bqm-30-s5M"/>
+                <outlet property="ratingLabel" destination="JTF-hf-lzC" id="yhD-IE-HHn"/>
+                <outlet property="releaseDateLabel" destination="MwW-Cl-RSE" id="WUT-j6-NpF"/>
+                <outlet property="titleLabel" destination="QS3-fT-dZD" id="eac-0j-14P"/>
+            </connections>
+            <point key="canvasLocation" x="182.60869565217394" y="155.35714285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="photo.artframe" catalog="system" width="128" height="93"/>
+    </resources>
+</document>
