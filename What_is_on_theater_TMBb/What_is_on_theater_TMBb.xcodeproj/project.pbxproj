@@ -37,6 +37,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		880FC96F27D6621F00AFC86A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				88456F7C27D63EE9007DBF23 /* AppDelegate.swift */,
+				88456F7E27D63EE9007DBF23 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		880FC97027D6623A00AFC86A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		880FC97127D6624100AFC86A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		880FC97227D6624900AFC86A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				88456F8027D63EE9007DBF23 /* ViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		880FC97327D6627100AFC86A /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				88456F8527D63EED007DBF23 /* Assets.xcassets */,
+				88456F8A27D63EEE007DBF23 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
 		88456F7027D63EE9007DBF23 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +96,13 @@
 		88456F7B27D63EE9007DBF23 /* What_is_on_theater_TMBb */ = {
 			isa = PBXGroup;
 			children = (
-				88456F7C27D63EE9007DBF23 /* AppDelegate.swift */,
-				88456F7E27D63EE9007DBF23 /* SceneDelegate.swift */,
-				88456F8027D63EE9007DBF23 /* ViewController.swift */,
+				880FC96F27D6621F00AFC86A /* Application */,
+				880FC97027D6623A00AFC86A /* Data */,
+				880FC97127D6624100AFC86A /* Domain */,
+				880FC97227D6624900AFC86A /* Presentation */,
 				88456F8227D63EE9007DBF23 /* Main.storyboard */,
-				88456F8527D63EED007DBF23 /* Assets.xcassets */,
 				88456F8727D63EEE007DBF23 /* LaunchScreen.storyboard */,
-				88456F8A27D63EEE007DBF23 /* Info.plist */,
+				880FC97327D6627100AFC86A /* Supporting */,
 			);
 			path = What_is_on_theater_TMBb;
 			sourceTree = "<group>";
