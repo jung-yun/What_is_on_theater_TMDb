@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D71673673483572B4189ABC /* Pods_What_is_on_theater_TMBb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB139183887BD1A3EA2EF22 /* Pods_What_is_on_theater_TMBb.framework */; };
 		880FC97727D6636500AFC86A /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880FC97527D6636500AFC86A /* MovieTableViewCell.swift */; };
 		880FC97827D6636500AFC86A /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880FC97627D6636500AFC86A /* MovieTableViewCell.xib */; };
 		88456F7D27D63EE9007DBF23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88456F7C27D63EE9007DBF23 /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		297F8A633C56237A54BA539F /* Pods-What_is_on_theater_TMBb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-What_is_on_theater_TMBb.release.xcconfig"; path = "Target Support Files/Pods-What_is_on_theater_TMBb/Pods-What_is_on_theater_TMBb.release.xcconfig"; sourceTree = "<group>"; };
 		880FC97527D6636500AFC86A /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		880FC97627D6636500AFC86A /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 		88456F7927D63EE9007DBF23 /* What_is_on_theater_TMBb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = What_is_on_theater_TMBb.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +30,8 @@
 		88456F8527D63EED007DBF23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88456F8827D63EEE007DBF23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88456F8A27D63EEE007DBF23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDB139183887BD1A3EA2EF22 /* Pods_What_is_on_theater_TMBb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_What_is_on_theater_TMBb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F62F5B3066E21AFD643842E8 /* Pods-What_is_on_theater_TMBb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-What_is_on_theater_TMBb.debug.xcconfig"; path = "Target Support Files/Pods-What_is_on_theater_TMBb/Pods-What_is_on_theater_TMBb.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,12 +39,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D71673673483572B4189ABC /* Pods_What_is_on_theater_TMBb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7343F37786B87E3E6965916B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDB139183887BD1A3EA2EF22 /* Pods_What_is_on_theater_TMBb.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		880FC96F27D6621F00AFC86A /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +127,8 @@
 			children = (
 				88456F7B27D63EE9007DBF23 /* What_is_on_theater_TMBb */,
 				88456F7A27D63EE9007DBF23 /* Products */,
+				8CE491D9BB426B6BCE89F358 /* Pods */,
+				7343F37786B87E3E6965916B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +152,16 @@
 			path = What_is_on_theater_TMBb;
 			sourceTree = "<group>";
 		};
+		8CE491D9BB426B6BCE89F358 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F62F5B3066E21AFD643842E8 /* Pods-What_is_on_theater_TMBb.debug.xcconfig */,
+				297F8A633C56237A54BA539F /* Pods-What_is_on_theater_TMBb.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88456F8D27D63EEE007DBF23 /* Build configuration list for PBXNativeTarget "What_is_on_theater_TMBb" */;
 			buildPhases = (
+				02A84798EC3BA44772A8A75A /* [CP] Check Pods Manifest.lock */,
 				88456F7527D63EE9007DBF23 /* Sources */,
 				88456F7627D63EE9007DBF23 /* Frameworks */,
 				88456F7727D63EE9007DBF23 /* Resources */,
+				39BEB0D930FCC8DA52B77EAC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,7 +190,7 @@
 		88456F7127D63EE9007DBF23 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
+				BuildIndependentTargetsInParallel = NO;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
@@ -203,6 +230,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02A84798EC3BA44772A8A75A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-What_is_on_theater_TMBb-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39BEB0D930FCC8DA52B77EAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-What_is_on_theater_TMBb/Pods-What_is_on_theater_TMBb-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-What_is_on_theater_TMBb/Pods-What_is_on_theater_TMBb-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-What_is_on_theater_TMBb/Pods-What_is_on_theater_TMBb-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		88456F7527D63EE9007DBF23 /* Sources */ = {
@@ -356,6 +425,7 @@
 		};
 		88456F8E27D63EEE007DBF23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F62F5B3066E21AFD643842E8 /* Pods-What_is_on_theater_TMBb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -384,6 +454,7 @@
 		};
 		88456F8F27D63EEE007DBF23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 297F8A633C56237A54BA539F /* Pods-What_is_on_theater_TMBb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
